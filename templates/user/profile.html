@@ -1,0 +1,13 @@
+<div class="page-header">
+    <h1>{{ name }}</h1>
+</div>
+<dl class="dl-horizontal">
+  {{#field_address.und.0.first_name}}
+    <dt>Name</dt>
+    <dd>{{ field_address.und.0.first_name }} {{ field_address.und.0.last_name }}</dd>
+  {{/field_address.und.0.first_name}}
+  {{#mail}}
+    <dt>Email</dt>
+    <dd>{{ mail }}</dd>
+  {{/mail}}
+</dl>

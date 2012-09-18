@@ -1,0 +1,22 @@
+<h2 class="title"><a class="read-more" href="#article/{{nid}}" title="{{title}}">{{title}}</a></h2>
+<div class="metadata">
+    {{#publication}}
+    <span class="publication">{{publication}}
+        {{#page}}
+        <span class="page">, page {{page}}</span>
+        {{/page}}
+    </span>
+    {{/publication}}
+    {{#author}}
+    <span class="author">by {{author}}</span>
+    {{/author}}
+</div>
+{{#body}}
+    <div class="body">{{{body.und.0.safe_value}}}</div>    
+{{/body}}
+{{^body}}
+    {{#teaser}}
+        <div class="teaser">{{{teaser}}}</div>    
+        <a class="read-more" href="#article/{{nid}}" title="{{title}}">Read more</a>    
+    {{/teaser}}
+{{/body}} 

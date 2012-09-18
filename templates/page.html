@@ -1,0 +1,54 @@
+<div id="menu">
+	<!-- menu -->
+</div>
+<div class="container-fluid">
+    <div id="page-content">
+        <!-- page content is placed here -->
+        
+        <section class="page" id="home" data-route="*actions" data-view="home">
+            <!-- home page -->
+        </section>
+        
+        <section class="page" id="model" data-route="model" data-view="example" data-title="Model Example" data-authenticated="true">
+            <!-- example of model -->
+        </section>
+        
+        <section class="page" id="user-profile" data-route="user" data-view="profile" data-title="User Profile" data-authenticated="true">
+            <!-- example of user login -->
+        </section>
+        
+        <section class="page" id="user-login" data-route="user/login*query" data-view="login" data-title="User Login" data-authenticated="false">
+            <!-- example of user login -->
+        </section>
+        
+        <section class="page" id="user-logout" data-route="user/logout" data-view="logout" data-title="User Logout" data-authenticated="true">
+            <!-- example of user login -->
+        </section>
+
+        <section class="page" id="news-list" data-route="news" data-view="news" data-title="News">
+            <!-- news list -->
+        </section>
+        <section class="page" id="article" data-route="article/:nid" data-view="article">
+            <!-- individual news item -->
+        </section>
+    
+        <section class="page" id="search" data-route="search" data-view="search" data-title="Search">                    
+            <!-- search form -->
+        </section>
+
+        <section class="page" id="search-results" data-route="search/:input*view" data-view="search" data-title="Search">
+            <!-- search results -->
+        </section>
+
+        <section class="page" id="investor" data-route="investor/:nid" data-view="investorFull" data-title="Investor">
+            <!-- individual investor -->
+        </section>
+        
+    </div>
+
+    <hr>
+    
+    <footer>
+        <p>&copy; Fortbridge 2012</p>
+    </footer>
+</div>

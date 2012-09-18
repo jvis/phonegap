@@ -1,0 +1,45 @@
+{{#viewMode.full}}
+    <div class="page-header">
+        <h1>{{ title }}</h1>
+    </div>
+    <dl class="dl-horizontal">
+    {{#field_market.und}}
+        <dt class="market">Market</dt>
+        <dd class="market">{{ taxonomy_term.name }}</dd>
+    {{/field_market.und}}
+    {{#field_link.und}}
+        <dt class="link">Home page</dt>
+        <dd class="link"><a href="http://{{ url }}" title="Visit home page">{{ url }}</a></dd>
+    {{/field_link.und}}
+    {{#field_address.und}}
+        <dt class="address">Address</dt>
+        <dd class="address">
+            <address>
+            {{#organisation_name}}
+                <strong>{{ organisation_name }}</strong><br />
+            {{/organisation_name}}
+            {{#thoroughfare}}
+                {{#premise}}
+                {{ premise }},
+                {{/premise}} {{ thoroughfare }}<br />
+            {{/thoroughfare}}
+            {{#locality}}
+                {{ locality }},
+            {{/locality}} {{ administrative_area }} {{ postal_code }}<br />
+            </address> 
+        </dd>
+    {{/field_address.und}} 
+    </dl>
+{{/viewMode.full}}
+{{^viewMode.full}}
+    <a href="#investor/{{nid}}">
+        <i class="icon-chevron-right float-right"></i>
+        <span class="block title">{{ title }}</span>
+        {{#market}}
+            <small class="block market">{{ market }}</small>
+        {{/market}}
+        {{#distance_rounded}}
+            <small class="block distance">{{ distance_rounded }} <span class="units">km</span></small>
+        {{/distance_rounded}}
+    </a>
+{{/viewMode.full}}
