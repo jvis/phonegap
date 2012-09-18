@@ -3,14 +3,14 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.mapdataservices.hello-world"
         version   = "2.0.0">
-    <name>BP Everywhere Mobile</name>
+    <name>FB Mobile</name>
 
     <description>
-      BP Everywhere Mobile - Everywhere you need us
+      FB Mobile
     </description>
 
-    <author href="http://mapds.com.au" email="matthew.brunsdon@mapds.com.au">
-        MapData Services
+    <author href="http://test.com.au" email="fencehead2@gmail.com">
+       JVIS
     </author>
 
     <feature name="http://api.phonegap.com/1.0/device" />
